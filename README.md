@@ -23,10 +23,9 @@ Program shortening techniques
 - Program performance is less important than program length
 - The first parameter of main is initialized to 1 (argc with only program name)
 
-
 Shortening transformations
 --------------------------
 	1000            ==>    1E3               (Others: 999, 0xab)
-	n != 1          ==>    n^1
+	n != 1          ==>    n ^ 1
 	!(i == 1)       ==>    !(i - 1)
 	for(a=1;a;a++)  ==>    for(a=0;a++;)
